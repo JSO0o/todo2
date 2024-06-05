@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f7f8fc;
+  color: #333;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 버튼 스타일 */
+button {
+  background-color: pink;
+  border: none;
+  color: white; /* 글자 색을 하얀색으로 */
+  padding: 5px 5px; /* 버튼 크기 줄이기 */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px; /* 폰트 크기 줄이기 */
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button.delete, button.close {
+  width: auto;
+}
+
+/* 카드 스타일 */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  position: relative;
+  width: 250px; /* 카드 너비를 늘림 */
+  height: 150px; /* 카드 높이를 늘림 */
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card.work {
+  background-color: #f8d7da;
+}
+
+.card.personal {
+  background-color: #d4edda;
+}
+
+.card.shopping {
+  background-color: #d1ecf1;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 카드 내부 버튼 컨테이너 */
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  padding-left: 1cm; /* 왼쪽으로 1cm 이동 */
+}
+
+/* 입력 필드 스타일 */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* 일반 레이아웃 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 제목 스타일 */
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #e9f0f7;
+}
+
+header h1 {
+  flex: 1;
+  margin: 0;
+}
+
+header .create-task-button {
+  margin-left: 20px;
+}
+
+.App {
+  padding: 20px;
+}
+
+/* 카테고리 스타일 */
+.category-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.category {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category:hover {
+  background-color: #d1d1d1;
+}
+
+.category.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+}
